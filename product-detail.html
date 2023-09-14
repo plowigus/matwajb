@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lubi Lubi strona główna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+
+   
+    <section class="hero-section product-detail-hero">
+      <div class="position-absolute shadow d-none"></div>
+      <div class="container">
+        <div class="col-12">
+          <nav class="d-flex justify-content-between align-items-start nav-visible">
+            <div class="logo">
+              <a href="/">
+                <img src="./img/logo.svg" alt="">
+              </a>
+              
+            </div>
+            <div class="d-none d-lg-flex justify-content-between align-items-center navigation-links-wrapper">
+              <a href="/" class="navigation-links active">strona główna</a>
+              <a href="./produkty.html" class="navigation-links">produkty</a>
+              <a href="./about.html" class="navigation-links">o nas</a>
+              <a href="./contact.html" class="navigation-links">kontakt</a>
+            </div>
+            <div class="search-bar d-flex">
+              <div class="position-relative">
+                <img data-search-bar-icon class="d-block d-lg-none" src="./img/zoom-green.svg" alt="">
+                <img data-search-bar-icon-white class="d-none" src="./img/zoom-white.svg" alt="">
+                <div class="position-absolute circle-icon-active-zoom d-none"></div>
+              </div>  
+                <input class="search-toolbar d-none d-lg-block" placeholder="szukaj" type="text">
+                
+                <div class="logo-wrapper d-flex align-items-center">
+                <div data-person-logo class="person-logo position-relative">
+                  <img  src="./img/person-head.svg" alt="">
+                  <div class="person-body"></div>
+                  <div class="position-absolute account-wrapper-white d-none">
+                    <div class="first-wrapper d-flex justify-content-center align-items-center w-100">
+                    <a class="text-center" href="">Moje konto</a>
+                  </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center sec-wrapper">
+                    <button data-bs-toggle="modal" data-bs-target="#loginModal" class="green-btn w-75"><span class=" text-decoration-none" href="">Zaloguj się</a></button>
+                    <a class="register text-decoration-none" href="./register.html">Zarejestruj się</a>
+                    <img class="position-absolute triangle-img" src="./img/tringle.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div data-person-logo-close class="person-logo position-relative d-none">
+                  <div class="position-absolute circle-icon-active"></div>
+                  <img src="./img/white-head.svg" alt="">
+                  <div class="person-body white"></div>
+                
+                </div>
+                  <div class="position-relative">
+                    <a href="./cart.html"><img class="cart-logo" src="./img/cart.svg" alt=""></a>
+                  <div class="position-absolute circle-cart">
+                    <span>1</span>
+                  </div>
+                </div>
+
+                <div class=" d-flex d-lg-none flex-column h-100 justify-content-between align-items-start">
+                  <img data-menu-modal-btn class="hamburger-menu" src="./img/hamburger-green.svg" alt="">
+                  <img data-menu-modal-close class="d-none" src="./img/closebtn.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </nav>
+          
+          <div class="">
+            <input data-input-product-detail placeholder="szukaj..." class="search-bar-click d-none" type="text">
+          </div>
+
+        </div>
+       
+      </div>
+    </section>
+
+    <section class="product-deital-carousel d-block d-lg-none">
+      <div class="container-fluid">
+          <div class="col-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel data-interval="false"">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="background-prod">
+                    <img src="./img/prod2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/product-childern-hover.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/child-detail2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/child-detail1.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+      </div>
+
+    </section>
+
+    <section class="product-detail-wrapper">
+        <div class="container">
+        <div style="--bs-gutter-x:30px;--bs-gutter-y: 21px" class="row">
+            <div class="col-12 col-lg-7 left-side p-mobile-0 order-2">
+                <div style="--bs-gutter-x: 30px;--bs-gutter-y: 30px;" class="row d-none d-lg-flex">
+                    <div class="col-6 img-wrapper ">
+                        <div class="background-prod position-relative">
+                            <img class="w-100 " src="./img/prod2.png" alt="">
+                            <img class="position-absolute eye-icon" src="./img/eye.svg" alt="">
+                        </div>                   
+                    </div>
+                    <div class="col-6 img-wrapper">    
+                        <div class="position-relative">            
+                            <img class="w-100 " src="./img/product-childern-hover.png" alt="">   
+                            <img class="position-absolute eye-icon" src="./img/eye.svg" alt="">    
+                        </div>             
+                    </div>
+                    <div class="col-6 img-wrapper">
+                        <div class="position-relative"> 
+                        <img class="w-100 " src="./img/child-detail2.png" alt="">
+                        <img class="position-absolute eye-icon" src="./img/eye.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 img-wrapper">
+                        <div class="position-relative"> 
+                        <img class="w-100 " src="./img/child-detail1.png" alt="">
+                        <img class="position-absolute eye-icon" src="./img/eye.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="desc-wrapper">
+                            <p class="desc-title">Opis</p>
+                        </div>
+                        <p class="desc-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 p-mobile-0 order-1">
+                <div class="add-to-cart">
+                    <div class="position-relative d-flex justify-content-between align-items-start">
+                        <p class="title-add-to-cart">Nazwa</p>
+                        <div class="position-absolute badge-new">
+                            <span class="new-text">nowy</span>
+                          </div>
+                    </div>
+                    <p class="big-title-prod">Nazwa produktu prezentowanego dla dzieci</p>
+                    <p class="cart-price">000.000 zł</p>
+
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between ">
+                            <span class="prod-circle pointer">-</span>
+                            <span class="prod-circle">1</span>
+                            <span class="prod-circle pointer">+</span>
+                        </div>
+                        <button style="margin-left: 10px;" class="green-btn w-75 ">Dodaj</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+   <section class="homepage-product similar-product">
+      <div class="container">
+        <div class="row">
+        <div class="col-12 ">
+            <div class="similar-wrapper">
+                <p class="similar-text">Produkty pokrewne</p>
+            </div>
+            <div class="row">
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="card-product-small">
+                      <div class="small-prod-wrapper">
+                        <div class="new-badge"></div>
+                        <img class="img-prod" src="./img/product-solo.png" alt="">
+                      </div>
+                      <div class="mobile-wrapper-footer-product">
+                        <div class="card-footer-product">
+                          <p class="product-title">Drabinka 01</p>
+                          <p class="product-price">000,000 zł</p>
+                        </div>
+                        <div class="d-flex d-lg-none">
+                          <div class="circle-arrow-product left-arrow">
+                              <img src="./img/arrow-left.svg" alt="">
+                          </div>
+                          <div class="circle-arrow-product">
+                            <img src="./img/arrow-right.svg" alt="">
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>              
+            </div>
+
+             
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+      
+      </div>
+
+    </section> 
+    
+  
+    <section class="product-newsletter-section detail-product">
+        <div class="container  h-100">
+          <div class="row h-100">
+                <div class="d-none d-lg-block col-2"></div>
+                <div class="col-lg-8 col-12  h-100">
+                  <div class="text-wrapper d-flex justify-content-center align-items-center h-100">
+                    <div class="input-group">
+                      <input type="text" class="form-control w-50" placeholder="Twój email">
+                      <button class="green-btn w-50" type="button" id="button-addon2">Zapisz się do newslettera</button>
+                    </div>
+                  </div>
+                  </div>
+                <div class="d-none d-lg-block col-2"></div>            
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="d-flex w-100 justify-content-between link-wrapper">
+          <a class="footer-link" href="">o nas</a>
+          <a class="footer-link" href="">dostawa</a>
+          <a class="footer-link" href="">płatności</a>
+          <a class="footer-link" href="">zwroty</a>
+          <a class="footer-link" href="">regulamin sklepu</a>
+          <a class="footer-link" href="">polityka prywatności</a>
+          <a class="footer-link" href="">faq</a>
+          <a class="footer-link" href="">kontakt</a>
+        </div>
+  
+        <div class="row logo-wrapper-footer">
+          <div class=" col-12 col-lg-6">
+            <img src="./img/biglogo-1.png" alt="">
+          </div>
+          <div class="col-12 col-lg-6">
+  
+            <div class="d-flex align-items-center justify-content-between adress-logo-wrapper">
+              <div class="address-wrapper">
+                <div class="footer-section-address">
+                  <p class="m-0">Kozodrza 509</p>
+                  <p class="m-0">39-103 Ostrów</p>
+                  <p class="m-0">Podkarpackie</p>
+                </div>
+  
+                <div class="footer-section-address">
+                  <p class="m-0">tel: 000 000 000</p>
+                  <p class="m-0">NIP: 0000000000</p>
+                  <p class="m-0">info@lubilubi.pl</p>
+                </div>
+              </div>
+  
+              <div class="facebook-wrapper d-flex justify-content-between">
+                <img src="./img/instagram.png" alt="">
+                <img src="./img/facebook.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <section class="sponsor-section d-none d-lg-block">
+      <div class="container h-100">
+        <div class="d-flex justify-content-between align-items-center h-100">
+  
+          <img src="./img/fepolska.png" alt="">
+          <img src="./img/polska.png" alt="">
+          <img src="./img/parp.png" alt="">
+          <img src="./img/ue.png" alt="">
+  
+        </div>
+      </div>
+    </section>
+  
+    <section class="sponsor-mobile d-block d-lg-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex align-items-center justify-content-between mobile-sponsor-wrapper">
+              <img src="./img/fepolska.png" alt="">
+              <img src="./img/polska.png" alt="">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex align-items-center justify-content-between mobile-sponsor-wrapper">
+              <img src="./img/parp.png" alt="">
+              <img src="./img/ue.png" alt="">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header border-none">
+            <h5 class="modal-title" id="loginModalLabel"></h5>
+            <span class="close-btn-modal" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="./img/zoom.svg" alt=""></button>
+          </div>
+          <div class="d-flex justify-content-center w-100">
+          <div style="width: 350px;" class="d-flex flex-column justify-content-center align-items-start modal-login-content">
+            <p class="modal-login">Logowanie</p>
+            <p class="hello-again">Witaj ponownie</p>
+            <input class="input-contact w-100" type="text" placeholder="Login">
+            <input class="input-contact w-100" type="password" placeholder="Hasło">
+            <button style="height: 60px;" class="green-btn">Zaloguj się</button>
+            <div class="forgot-wrapper">
+              <a class="forgot-pass m-0 text-decoration-none" href="">Zapomniałeś hasła?</a>
+            </div>
+
+            <div class="register-wrapper w-100">
+              <p class="modal-login">Rejestracja</p>
+              <p class="hello-again m-0">Nie masz konta?</p>
+              <button style="height: 60px;" class="green-btn w-100"><a class="text-decoration-none" href="./register.html">Zarejestruj się</a> </button>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <span data-close-trigger-btn data-bs-dismiss="modal" class="d-none"></span>
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        
+        <div class="menu-mobile-wrapper d-flex flex-column">
+          <a class="menu-mobile-link" href="/index.html">strona główna</a>
+          <a class="menu-mobile-link" href="./produkty.html">produkty</a>
+          <a class="menu-mobile-link" href="./about.html">o nas</a>
+          <a class="menu-mobile-link" href="./contact.html">kontakt</a>
+        </div>
+        <div class="mobile-menu-footer d-flex flex-column">
+          <a href="" class="mobile-footer-link">regulamin</a>
+          <a href="" class="mobile-footer-link">FAQ</a>
+          <a href="" class="mobile-footer-link">polityka prywatności</a>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
