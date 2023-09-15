@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		const cloneWrapperTablet = document.querySelector('[data-benefits-tablet-clone-wrapper]')
 
-		if(cloneWrapperTablet){
+		if(benefitOne){
 
 		cloneOne.classList.add('single-wrapper')
 		cloneTwo.classList.add('single-wrapper')
