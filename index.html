@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>Lubi Lubi strona główna</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
@@ -29,19 +30,19 @@
             </div>
             <div class="search-bar d-flex">
               <div class="position-relative">
-              <img data-search-bar-icon class="d-block d-lg-none" src="./img/zoom-green.svg" alt="">
+              <img data-search-bar-icon class="d-block d-md-none d-lg-none" src="./img/zoom-green.svg" alt="">
               <img data-search-bar-icon-white class="d-none" src="./img/zoom-white.svg" alt="">
               <div class="position-absolute circle-icon-active-zoom d-none"></div>
 
               </div>
-                <input class="search-toolbar d-none d-lg-block" placeholder="szukaj" type="text">
+                <input class="search-toolbar d-none d-md-block d-lg-block" placeholder="szukaj" type="text">
                 
                 <div class="logo-wrapper d-flex align-items-center">
                 <div data-person-logo class="person-logo position-relative">
                   
                   <img  src="./img/person-head.svg" alt="">
                   <div class="person-body"></div>
-                  <div class="position-absolute account-wrapper-white d-none">
+                  <div class="position-absolute account-wrapper-white d-md-none d-none">
                     <div class="first-wrapper d-flex justify-content-center align-items-center w-100">
                     <a class="text-center" href="">Moje konto</a>
               
@@ -79,20 +80,20 @@
           <input placeholder="szukaj..." class="search-bar-click d-none" type="text">
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-12 col-lg-6">
           <div class="hero-section-wrapper">
               <h1 class="hero-text-h1">Nowe produkty dla naszych dzieci</h1>
 
-              <div data-benefits-wrapper class="row benefits-wrapper d-md-flex d-lg-flex d-none">
+              <div data-benefits-wrapper class="row benefits-wrapper d-md-none d-lg-flex d-none">
                 <div class="col-12 col-md-6 col-lg-6 m-0 p-0 single-wrapper mr30">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div data-benefit-one class="d-flex flex-column align-items-center justify-content-center">
                       <img src="./img/babyhead.svg" alt="">
                       <p class="benefits-title">Lorem Ipsum is simply</p>
                       <p class="benefits-subtitle">dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 m-0 p-0 single-wrapper">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div data-benefit-two class="d-flex flex-column align-items-center justify-content-center">
                     <img src="./img/bulb.svg" alt="">
                     <p class="benefits-title">Lorem Ipsum is simply</p>
                     <p class="benefits-subtitle">dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
@@ -100,14 +101,14 @@
                 </div>
 
                 <div class="col-12 col-lg-6 m-0 p-0 single-wrapper mt30 mr30">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div data-benefit-three class="d-flex flex-column align-items-center justify-content-center">
                     <img src="./img/tree.svg" alt="">
                     <p class="benefits-title">Lorem Ipsum is simply</p>
                     <p class="benefits-subtitle">dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
                 </div>
                 </div>
                 <div class="col-12 col-lg-6 m-0 p-0 single-wrapper mt30">
-                  <div class="d-flex flex-column align-items-center justify-content-center">
+                  <div data-benefit-four class="d-flex flex-column align-items-center justify-content-center">
                     <img src="./img/security.svg" alt="">
                     <p class="benefits-title">Lorem Ipsum is simply</p>
                     <p class="benefits-subtitle">dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
@@ -124,11 +125,21 @@
 
     </div>
 
+    <div  class="benefits-tablet-clone">
+      <div class="row">
+        <div data-benefits-tablet-clone-one class="col-6"></div>
+        <div data-benefits-tablet-clone-two class="col-6"></div>
+        <div data-benefits-tablet-clone-three class="col-6"></div>
+        <div data-benefits-tablet-clone-four class="col-6"></div>
+      </div>
+
+    </div>
+
    <section class="homepage-product">
       <div class="container">
         <div class="col-12">
             <div class="row">
-                <div class="col-12 col-lg-6 m-0 p-0 card-product-big">
+                <div class="col-12 col-md-12 col-lg-6 m-0 p-0 card-product-big">
                     <div class="img-wrapper">
                       <img class="product-img" src="./img/product-children.png" alt="">
                     </div>
@@ -137,9 +148,9 @@
                       <p class="product-price">000,000 zł</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 p-0 m-0">
+                <div class="col-12 col-md-12 col-lg-6 p-0 m-0">
                     <div class="row">
-                        <div class="col-12 col-lg-6 ">
+                        <div class="col-12 col-md-6 col-lg-6 ">
                           <div class="card-product-small">
                             <div class="small-prod-wrapper">
                               <div class="new-badge"></div>
@@ -151,7 +162,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-md-6 col-lg-6">
                           <div class="card-product-small">
                             <div class="small-prod-wrapper">
                               <div class="new-badge"></div>
@@ -163,7 +174,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-12 col-lg-6 mt21">
+                        <div class="col-12 col-md-6 col-lg-6 mt21">
                           <div class="card-product-small">
                             <div class="small-prod-wrapper">
                               <div class="new-badge"></div>
@@ -175,7 +186,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-12 col-lg-6 mt21">
+                        <div class="col-12 col-md-6 col-lg-6 mt21">
                           <div class="card-product-small">
                             <div class="small-prod-wrapper">
                               <div class="new-badge"></div>
@@ -196,9 +207,9 @@
 
             <div class="col-12 product-wrapper-two ">
               <div class="row">
-                  <div class="col-12 col-lg-6 p-0 m-0 p30 second-wrapper-prod">
+                  <div class="col-12 col-md-12 col-lg-6 p-0 m-0 p30 second-wrapper-prod">
                       <div class="row">
-                          <div class="col-12 col-lg-6 ">
+                          <div class="col-12 col-md-6 col-lg-6 ">
                             <div class="card-product-small">
                               <div class="small-prod-wrapper">
                                 <div class="new-badge"></div>
@@ -210,7 +221,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-12 col-lg-6">
+                          <div class="col-12 col-md-6 col-lg-6">
                             <div class="card-product-small">
                               <div class="small-prod-wrapper">
                                 <div class="new-badge"></div>
@@ -222,7 +233,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-12 col-lg-6 mt21">
+                          <div class="col-12 col-md-6 col-lg-6 mt21">
                             <div class="card-product-small">
                               <div class="small-prod-wrapper">
                                 <div class="new-badge"></div>
@@ -234,7 +245,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-12 col-lg-6 mt21">
+                          <div class="col-12 col-md-6 col-lg-6 mt21">
                             <div class="card-product-small">
                               <div class="small-prod-wrapper">
                                 <div class="new-badge"></div>
@@ -285,14 +296,14 @@
      <section class="expirience-section">
       <div class="container">
         <div class="row">
-        <div class="col-12 col-lg-6 col-xl-6 p-0 m-0 order-2">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0 m-0 order-2">
           <div class="expirience-text">
             <p class="exp-title">Doświadczenie, jakość i trwałość</p>
             <p class="exp-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
             <button class="green-btn">Dowiedz się więcej</button>
           </div>
         </div>
-        <div class="col-12 col-lg-6 p-0 m-0 order-1 exp-wrapper-image">
+        <div class="col-12 col-md-6 col-lg-6 p-0 m-0 order-1 exp-wrapper-image">
           <div class="img-wrapper-exp">
             <img src="./img/faces.png" alt="">
           </div>
@@ -368,7 +379,7 @@
       </div>
     </footer>
   
-    <section class="sponsor-section d-none d-lg-block">
+    <section class="sponsor-section d-none d-md-block d-lg-block">
       <div class="container h-100">
         <div class="d-flex justify-content-between align-items-center h-100">
   
@@ -381,7 +392,7 @@
       </div>
     </section>
   
-    <section class="sponsor-mobile d-block d-lg-none">
+    <section class="sponsor-mobile d-block d-md-none d-lg-none">
       <div class="container">
       <div class="row">
         <div class="col-12">
@@ -404,7 +415,7 @@
 
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     
-      <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header border-none">
             <h5 class="modal-title" id="loginModalLabel"></h5>
