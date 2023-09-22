@@ -555,3 +555,5 @@ if (detailSection) {
 
 
 }
+
+

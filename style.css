@@ -2982,7 +2982,10 @@
     width: 50% !important;
     padding: 0;
   }
-  [data-benefits-wrapper] .single-wrapper [data-benefit-one], [data-benefits-wrapper] .single-wrapper [data-benefit-two], [data-benefits-wrapper] .single-wrapper [data-benefit-three], [data-benefits-wrapper] .single-wrapper [data-benefit-four] {
+  [data-benefits-wrapper] .single-wrapper [data-benefit-one],
+  [data-benefits-wrapper] .single-wrapper [data-benefit-two],
+  [data-benefits-wrapper] .single-wrapper [data-benefit-three],
+  [data-benefits-wrapper] .single-wrapper [data-benefit-four] {
     padding: 0 10px !important;
   }
   .hero-section .hero-section-wrapper {
@@ -3053,6 +3056,11 @@
     width: 25%;
   }
 }
+[data-img-one],
+[data-img-two] {
+  max-height: 328px;
+}
+
 @media (min-width: 1200px) {
   .newsletter-section {
     background-position-y: 50%;
@@ -3076,5 +3084,35 @@
   }
   .hero-section.hero-section-register {
     height: 100%;
+  }
+}
+.single-faces-homepage {
+  top: 10%;
+  left: -12%;
+}
+
+.single-faces-about-left {
+  top: 20%;
+  left: 5%;
+}
+
+.single-faces-about-right {
+  right: 9%;
+  top: 64%;
+}
+
+.orange-faces-single-right {
+  top: 55%;
+  right: 19%;
+}
+
+.single-green-face-left {
+  top: 60%;
+  left: 15%;
+}
+
+@media (min-width: 1599px) {
+  .about-us-section .wrapper-padding .img-wrapper-about-text {
+    padding-right: 220px;
   }
 }/*# sourceMappingURL=style.css.map */
