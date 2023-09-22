@@ -3367,10 +3367,14 @@
   padding-bottom: 2px;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1399.98px) {
 
   .hero-section .navigation-links-wrapper {
     width: 452px;
+  }
+
+  .newsletter-section {
+    background-position-y: 50%;
   }
 
   [data-benefits-wrapper]{
@@ -3387,5 +3391,135 @@
 
   .hero-section .hero-section-wrapper {
     margin-top: 90px;
+  }
+
+
+  .homepage-product .product-wrapper-two .our-products-wrapper {
+    padding: 50px 50px;
+  }
+
+  .expirience-section {
+    padding: 64px 0;
+
+   
+  } 
+
+  .expirience-section .exp-wrapper-image .img-wrapper-exp img {
+    padding: 0px 40px;
+    width: 88%;
+  }
+
+  .expirience-section .expirience-text {
+    padding-right: 0px !important;
+    padding-left: 105px ;
+  }
+
+  .about-us-section .wrapper-padding .img-wrapper-about-text {
+    padding: 50px 40px;
+  }
+
+  .about-us-section .wrapper-padding {
+    margin-right: 0px;
+  }
+
+  .about-us-section-two .wrapper-padding .img-wrapper-about-text {
+    padding: 50px 40px;
+  }
+
+  .about-us-section-two .wrapper-padding {
+    margin-left: 0px;
+}
+
+.hero-section.hero-section-contact .faces-left {
+  top: 40%;
+  width: 30%;
+}
+
+.hero-section.hero-section-contact .faces-right {
+  right: 0%;
+  top: 15%;
+  width: 30%;
+}
+
+  @media (min-height: 768px) and (max-height: 860px) {
+
+
+    .hero-section{
+      height: 100%;
+    }
+  
+    .hero-section.hero-section-product{
+      height: 100%;
+    }
+  
+    .hero-section.hero-section-about{
+      height: 100vh;
+    }
+  
+    .hero-section.hero-section-about .about-hero-main {
+      margin-top: 160px;
+    }
+  
+    .hero-section.hero-section-contact {
+      height: 100vh;
+    }
+  
+    .hero-section.hero-section-register {
+      height: 100%;
+    }
+
+    .hero-section.hero-section-contact .faces-left {
+      top: 59%;
+      width: 25%;
+    }
+
+    .hero-section.hero-section-contact .faces-right {
+      right: 0%;
+      top: 15%;
+      width: 25%;
+    }
+  
+  
+  }
+
+
+}
+
+
+@media (min-width: 1200px) {
+  .newsletter-section {
+    background-position-y: 50%;
+    
+  }
+
+  @media (min-height: 768px) and (max-height: 870px) {
+
+
+    .hero-section{
+      height: 100%;
+    }
+  
+    .hero-section.hero-section-product{
+      height: 100%;
+    }
+  
+    .hero-section.hero-section-about{
+      height: 100vh;
+    }
+  
+    .hero-section.hero-section-about .about-hero-main {
+      margin-top: 160px;
+    }
+  
+    .hero-section.hero-section-contact {
+      height: 100vh;
+    }
+
+    .hero-section.hero-section-register {
+      height: 100%;
+    }
+  
+  
+  
   }
 }
