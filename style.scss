@@ -645,7 +645,7 @@
 
 .hero-section {
   padding: 50px 0px;
-
+  background-position: top;
   height: 100vh;
   background-image: url(./img/hero.png);
   background-size: cover;
@@ -3368,6 +3368,11 @@
 }
 
 @media (min-width: 992px) and (max-width: 1399.98px) {
+
+  .contact-form .label-upload {
+    width: 30%;
+  }
+  
   .hero-section .navigation-links-wrapper {
     width: 452px;
   }
@@ -3541,6 +3546,28 @@
   left: 15%;
 }
 
+@media (max-width: 1600px){
+  .single-faces-homepage {
+   display: none !important;
+  }
+  
+  .single-faces-about-left {
+    display: none !important;
+  }
+  
+  .single-faces-about-right{
+   
+display: none !important;
+  }
+  
+  .orange-faces-single-right{
+    display: none !important;
+  }
+  .single-green-face-left{
+    display: none !important;
+  }
+}
+
 @media (min-width: 1599px) {
 
   .about-us-section .wrapper-padding .img-wrapper-about-text {
@@ -3548,3 +3575,5 @@
   }
 
 }
+
+
