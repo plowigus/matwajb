@@ -6,6 +6,143 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.hero-section.product-detail-hero {
+  min-height: unset;
+}
+
+.similar-product-desktop .similar-product-img-wrapper {
+  background: #FFF6F9;
+}
+
+.products-wrapper-section-desktop .img-small-desktop {
+  height: 416px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products-wrapper-section-desktop .badge-new {
+  width: 90px;
+  height: 20px;
+  background-color: #f26e52;
+  top: 0;
+  right: 0;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products-wrapper-section-desktop .badge-new .new-text {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.608px; /* 171.735% */
+  letter-spacing: 0.412px;
+}
+.products-wrapper-section-desktop .card-footer-product .product-title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20.608px; /* 137.388% */
+  letter-spacing: 0.412px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.products-wrapper-section-desktop .card-footer-product .product-price {
+  color: #000;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.608px; /* 137.388% */
+  letter-spacing: 0.412px;
+}
+
+.section-wrapper-desktop [data-big-img-product-desktop] {
+  height: 696px;
+  background-color: #fff6f9;
+}
+.section-wrapper-desktop .img-small-desktop {
+  height: 301.5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-wrapper-desktop .card-footer-product .product-title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20.608px; /* 137.388% */
+  letter-spacing: 0.412px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.section-wrapper-desktop .card-footer-product .product-price {
+  color: #000;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.608px; /* 137.388% */
+  letter-spacing: 0.412px;
+}
+.section-wrapper-desktop .our-products-wrapper {
+  padding: 50px 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section-wrapper-desktop .our-products-wrapper .our-prod-text {
+  color: #f26e52;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: 39px;
+}
+.section-wrapper-desktop .our-products-wrapper .our-prod-small {
+  color: #000;
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 1.2px;
+}
+.section-wrapper-desktop .our-products-wrapper .btn-wrapper {
+  margin-top: 77px;
+}
+.section-wrapper-desktop .our-products-wrapper .btn-wrapper .btn-custom {
+  width: 100%;
+  border-radius: 46px;
+  background: #f26e52;
+  height: 50px;
+  border: none;
+  padding: 15px 10px;
+  color: #fff6f9;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 1.5px;
+  text-align: center;
+  transition: 0.4s;
+}
+.section-wrapper-desktop .our-products-wrapper .btn-wrapper .btn-custom:hover {
+  color: #f26e52;
+  border: 1px solid #f26e52;
+  background-color: #fff;
+}
+
 .footer-product-detail {
   background-color: #fff6f9 !important;
 }
@@ -30,7 +167,7 @@
 }
 
 .bg-prod {
-  background-color: #FFF6F9;
+  background-color: #fff6f9;
 }
 
 .splide__slide .img-prod {
@@ -169,6 +306,7 @@
 .hero-section.hero-section-product {
   background-image: none;
   background-color: #f3f9fa;
+  min-height: 780px;
   height: 80vh;
 }
 
@@ -252,7 +390,7 @@
 .hero-section.cart-section .cart-prod-desc {
   height: 100%;
   display: flex;
-  align-items: end;
+  align-items: center;
 }
 .hero-section.cart-section .cart-prod-desc .prod-title {
   color: #000;
@@ -486,6 +624,7 @@
 .hero-section.hero-section-contact {
   background-image: none;
   background-color: #0aad73;
+  min-height: 780px;
   height: 80vh;
 }
 .hero-section.hero-section-contact .faces-left {
@@ -596,6 +735,7 @@
 .hero-section {
   padding: 50px 0px;
   background-position: top;
+  min-height: 960px;
   height: 100vh;
   background-image: url(./img/hero.png);
   background-size: cover;
@@ -1267,9 +1407,11 @@
 }
 
 .about-us-section {
+  background-color: #fff6f9;
   height: 700px;
 }
 .about-us-section .img-wrapper-about {
+  margin-top: 64px;
   background: url(./img/about-us-girl.png), lightgray 50%/cover no-repeat;
   height: 700px;
   background-repeat: no-repeat;
@@ -1311,9 +1453,11 @@
 }
 
 .about-us-section-two {
-  height: 700px;
+  background-color: #f3f9fa;
+  height: auto;
 }
 .about-us-section-two .img-wrapper-about {
+  padding-bottom: 64px;
   background: url(./img/about-us-desk.png), lightgray 50%;
   height: 700px;
   background-repeat: no-repeat;
@@ -2038,6 +2182,18 @@
   }
 }
 @media (max-width: 991.98px) {
+  .hero-section-container {
+    padding: 0;
+  }
+  .hero-section-container .hero-section-wrapper .hero-text-h1 {
+    text-align: left !important;
+  }
+  .hero-section {
+    min-height: unset;
+  }
+  .splide__pagination {
+    display: none !important;
+  }
   .footer-section {
     height: auto;
   }
@@ -2379,7 +2535,7 @@
     letter-spacing: 1.2px;
   }
   .homepage-product {
-    padding: 0 32px;
+    padding: 0 20px;
   }
   .homepage-product .col-wrapper-prod {
     width: 100%;
@@ -2470,9 +2626,12 @@
     padding: 6px 6px;
     width: 50%;
   }
+  .homepage-product .product-wrapper-two .our-products-wrapper .our-prod-text {
+    text-align: left;
+  }
   .expirience-section {
     padding-left: 0px;
-    padding: 0 32px;
+    padding: 0 20px;
     height: auto;
   }
   .expirience-section .exp-wrapper-image {
@@ -2838,7 +2997,7 @@
     left: 55%;
     width: 70px;
     height: 70px;
-    background: #FAE6EC;
+    background: #fae6ec;
   }
   .homepage-product .card-product-big .img-wrapper .splide .splide__arrow--next {
     left: 80%;
@@ -2874,7 +3033,7 @@
        object-fit: contain;
   }
   .bg-prod {
-    background-color: #FFF6F9;
+    background-color: #fff6f9;
   }
   .splide__slide .img-prod {
     -o-object-fit: contain;
@@ -2895,11 +3054,11 @@
     left: 55%;
     width: 70px;
     height: 70px;
-    background: #FAE6EC;
+    background: #fae6ec;
   }
   .splide__arrow svg {
-    fill: #F26E52;
-    stroke: #F26E52;
+    fill: #f26e52;
+    stroke: #f26e52;
     width: auto;
     width: 40px;
     height: 40px;
@@ -2921,7 +3080,7 @@
     left: 78%;
     width: 70px;
     height: 70px;
-    background: #FAE6EC;
+    background: #fae6ec;
   }
   .homepage-product .card-product-big .img-wrapper .splide .splide__arrow--next {
     left: 90%;
@@ -3236,17 +3395,11 @@
   .hero-section {
     height: 100%;
   }
-  .hero-section.hero-section-product {
-    height: 100%;
-  }
   .hero-section.hero-section-about {
     height: 100vh;
   }
   .hero-section.hero-section-about .about-hero-main {
     margin-top: 160px;
-  }
-  .hero-section.hero-section-contact {
-    height: 100vh;
   }
   .hero-section.hero-section-register {
     height: 100%;
@@ -3275,17 +3428,11 @@
   .hero-section {
     height: 100%;
   }
-  .hero-section.hero-section-product {
-    height: 100%;
-  }
   .hero-section.hero-section-about {
     height: 100vh;
   }
   .hero-section.hero-section-about .about-hero-main {
     margin-top: 160px;
-  }
-  .hero-section.hero-section-contact {
-    height: 100vh;
   }
   .hero-section.hero-section-register {
     height: 100%;
@@ -3317,9 +3464,6 @@
 }
 
 @media (max-width: 1600px) {
-  .single-faces-homepage {
-    display: none !important;
-  }
   .single-faces-about-left {
     display: none !important;
   }
@@ -3337,4 +3481,68 @@
   .about-us-section .wrapper-padding .img-wrapper-about-text {
     padding-right: 220px;
   }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .section-wrapper-desktop [data-big-img-product-desktop] {
+    height: 606px;
+  }
+  .section-wrapper-desktop .img-small-desktop {
+    height: 256.5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .single-faces-homepage {
+    top: 10%;
+    left: -14%;
+  }
+  .products-wrapper-section-desktop .img-small-desktop {
+    height: 356px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-wrapper-desktop [data-big-img-product-desktop] {
+    height: 516px;
+  }
+  .section-wrapper-desktop .img-small-desktop {
+    height: 211.5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .our-products-wrapper {
+    padding: 0px 20px !important;
+  }
+  .single-faces-homepage {
+    top: 10%;
+    left: -17%;
+  }
+  .products-wrapper-section-desktop .img-small-desktop {
+    height: 295.98px;
+  }
+}
+@keyframes downSection {
+  from {
+    margin-top: 40px;
+  }
+  to {
+    margin-top: 150px;
+  }
+}
+.downSection {
+  animation-name: downSection;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes upSection {
+  from {
+    margin-top: 150px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+.upSection {
+  animation-name: upSection;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }/*# sourceMappingURL=style.css.map */
